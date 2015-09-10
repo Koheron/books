@@ -5,7 +5,11 @@ title: Books
 <div class="posts">
 
     {% for book in site.books%}
-    	<li>{{ book.name }}</li>
+      {% if book.borrowed_by %}
+    	   <li>{{ book.name }}, borrowed by {{ book.borrowed_by }}</li>
+      {% else %}
+        <li>{{ book.name }}</li>
+      {% endif %}
     {% endfor %}
 
 </div>
