@@ -1,0 +1,7 @@
+_site/
+.gitignore~
+
+*.html~
+*.md~
+*.css~
+*.yml~
