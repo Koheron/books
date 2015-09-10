@@ -13,3 +13,5 @@ url: http://koheron.github.io
 collections: 
   books:
     output: true
+gems:
+  - jekyll-mentions
