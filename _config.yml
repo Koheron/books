@@ -1,0 +1,14 @@
+author: Koheron
+description: List of books
+permalink: /blog/:categories/:year/:month/:day/:title.html
+markdown: kramdown
+highlighter: pygments
+kramdown:
+  input: GFM
+  hard_wrap: false
+exclude: ["Rmd", ".DS_Store", "README.md"]
+excerpt_separator: <!--more-->
+baseurl:
+collections: 
+  books:
+    output: true

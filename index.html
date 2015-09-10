@@ -1,0 +1,11 @@
+---
+layout: page-narrow
+title: Books
+---
+<div class="posts">
+
+    {% for book in site.books%}
+    	<li>{{ book.name }}</li>
+    {% endfor %}
+
+</div>
