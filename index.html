@@ -4,11 +4,27 @@ title: Books
 ---
 <div class="posts">
 
-    {% for book in site.books%}
-      {% if book.borrowed_by %}
-    	   <li>{{ book.name }}, borrowed by {{ book.borrowed_by }}</li>
-      {% else %}
-        <li>{{ book.name }}</li>
+    
+
+   <h2>Business</h2>
+   {% for book in site.books%}
+      {% if book.topic == "business" %}
+        {% if book.borrowed_by %}
+    	     <li>{{ book.name }}, <span class="label label-warning">borrowed</span>({{ book.borrowed_by }})</li>
+        {% else %}
+          <li>{{ book.name }}</li>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+   <h2>Science and Technology</h2>
+   {% for book in site.books%}
+      {% if book.topic == "techno" %}
+        {% if book.borrowed_by %}
+    	     <li>{{ book.name }}, <span class="label label-warning">borrowed</span>({{ book.borrowed_by }})</li>
+        {% else %}
+          <li>{{ book.name }}</li>
+        {% endif %}
       {% endif %}
     {% endfor %}
 
