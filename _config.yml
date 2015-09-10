@@ -9,6 +9,7 @@ kramdown:
 exclude: ["Rmd", ".DS_Store", "README.md"]
 excerpt_separator: <!--more-->
 baseurl: /books
+url: http://koheron.github.io
 collections: 
   books:
     output: true
