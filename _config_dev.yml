@@ -11,8 +11,7 @@ excerpt_separator: <!--more-->
 baseurl:
 url: http://koheron.github.io
 collections: 
-  books:
-    output: true
+  - books:
 gems:
   - jekyll-mentions
 
