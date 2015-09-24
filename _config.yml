@@ -6,7 +6,7 @@ highlighter: pygments
 kramdown:
   input: GFM
   hard_wrap: false
-exclude: ["Rmd", ".DS_Store", "README.md"]
+exclude: ["Rmd", ".DS_Store", "README.md", "vendor"]
 excerpt_separator: <!--more-->
 baseurl: /books
 url: http://koheron.github.io
@@ -15,4 +15,4 @@ collections:
     output: true
 gems:
   - jekyll-mentions
-exclude: [vendor]
+
