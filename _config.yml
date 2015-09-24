@@ -15,3 +15,4 @@ collections:
     output: true
 gems:
   - jekyll-mentions
+exclude: [vendor]
