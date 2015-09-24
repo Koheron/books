@@ -1,0 +1,18 @@
+title: Books
+description: A simple example of using collections with Jekyll
+permalink: /blog/:categories/:year/:month/:day/:title.html
+markdown: kramdown
+highlighter: pygments
+kramdown:
+  input: GFM
+  hard_wrap: false
+exclude: ["Rmd", ".DS_Store", "README.md", "vendor"]
+excerpt_separator: <!--more-->
+baseurl:
+url: http://koheron.github.io
+collections: 
+  books:
+    output: true
+gems:
+  - jekyll-mentions
+
