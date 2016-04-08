@@ -2,7 +2,7 @@ title: Books
 description: A simple example of using collections with Jekyll
 permalink: /blog/:categories/:year/:month/:day/:title.html
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 kramdown:
   input: GFM
   hard_wrap: false
