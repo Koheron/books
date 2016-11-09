@@ -1,41 +1,34 @@
+---
+layout: default
+---
+
 <!DOCTYPE html>
 
 <html lang="en">
 <head>
-    {% if page.title %}
-        <title>{{ page.title }}</title>
-    {% else %}
-        <title>{{ site.title }}</title>
-    {% endif %}
-    {% if page.description %}
-        <meta name="description" content="{{ page.description}}" />
-    {% endif %}
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% if page.keywords %}
-        <meta name="keywords" content="{{ page.keywords }}" />
-    {% else %}
-        <meta content="{{ site.keywords }}" name="keywords">
-    {% endif %}
-    <link href="{{ site.baseurl }}/static/images/favicon.ico" rel="shortcut icon">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="{{ site.baseurl }}/static/css/main.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <title>{{ site.title }}</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="{{ site.host_url }}/static/images/kbird.ico" rel="shortcut icon">
+  <link href="{{ site.host_url }}/static/css/main.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans|Montserrat' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    {% include nav.html %}
-	<div class="content">
-		{{content}}
-	</div>
-    
-    {% include footer.html %} 
 
-    <!-- Google Analytics -->
-     {% include google_analytics.html %}
+  {% include nav.html %}
+  <div class="container-fluid">
+    <div class="container narrow">
+      {{ content }}
+    </div>
+  </div>
+
 </body>
+
+{% include google-analytics.html %}
+
 </html>

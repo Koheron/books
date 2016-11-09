@@ -8,8 +8,9 @@ kramdown:
   hard_wrap: false
 exclude: ["Rmd", ".DS_Store", "README.md", "vendor"]
 excerpt_separator: <!--more-->
-baseurl:
+baseurl: /books
 url: http://koheron.github.io
+host_url: https://www.koheron.com
 collections: 
   - books
 gems:
